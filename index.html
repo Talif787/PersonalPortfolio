@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hi, I'm <span>Talif</span> <br />
+            Pathan from India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/user.avif" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              An experienced AWS MERN stack developer, passionate about crafting
+              robust, scalable, and efficient web applications. Proficient in
+              leveraging AWS cloud services to optimize application performance,
+              scalability, and security. Skilled in MongoDB, Express.js,
+              React.js, Python, and Node.js, adept at building full-stack
+              applications. Proven expertise in implementing AWS services such
+              as EC2, S3, Lambda, IoT Greengrass, IoT FleetWise, Cloud9,
+              OpenSearch, IAM, and DynamoDB for seamless deployment,
+              maintenance, and management of web solutions. Committed to staying
+              updated with the latest technologies and best practices in the
+              cloud and full-stack development landscape. Open to exciting
+              opportunities to contribute and innovate in dynamic projects.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web Interfaces</li>
+                <li>
+                  <span>Web Development</span><br />Building Full Stack
+                  Production Grade Web Applications
+                </li>
+                <li>
+                  <span>Cloud Computing</span><br />Setting up the cloud
+                  infrastructure
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 to Present</span><br />Senior Software Engineer at
+                  Capgemini
+                </li>
+                <li>
+                  <span>2021 to 2022</span><br />Software Engineer at Capgemini
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016 to 2020 - Bachelor's of Computer Engineering</span
+                  ><br />Rajiv Gandhi Institute of Technology (Andheri, Mumbai)
+                </li>
+                <li>
+                  <span>2014 to 2016 - Intermediate (HSC)</span><br />Royal
+                  College of Arts, Science and Commerce (Miraroad, Mumbai)
+                </li>
+
+                <li>
+                  <span>2014 - High School (SSC) </span><br />St. Xavier's High
+                  School (Miraroad, Mumbai)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+              fugiat natus animi dolores ducimus. Natus laudantium velit fuga
+              dolore, necessitatibus, eius aliquid perferendis accusantium fugit
+              obcaecati enim, repellendus aspernatur quod.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+              fugiat natus animi dolores ducimus. Natus laudantium velit fuga
+              dolore, necessitatibus, eius aliquid perferendis accusantium fugit
+              obcaecati enim, repellendus aspernatur quod.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-cloud"></i>
+            <h2>Cloud Computing</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+              fugiat natus animi dolores ducimus. Natus laudantium velit fuga
+              dolore, necessitatibus, eius aliquid perferendis accusantium fugit
+              obcaecati enim, repellendus aspernatur quod.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/blockchain_based_e_voting.gif" alt="1" />
+            <div class="layer">
+              <h3>Blockchain Based E-Voting System</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, numquam impedit! Temporibus doloremque similique
+                tempore esse delectus dicta consequatur. Sunt dolores velit, est
+                voluptas labore sapiente quibusdam doloremque magni maiores!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/spell_checker.png" alt="2" />
+            <div class="layer">
+              <h3>Spell Checker and Corrector</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, numquam impedit! Temporibus doloremque similique
+                tempore esse delectus dicta consequatur. Sunt dolores velit, est
+                voluptas labore sapiente quibusdam doloremque magni maiores!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/educational_website.png" alt="3" />
+            <div class="layer">
+              <h3>Educational Web Application</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, numquam impedit! Temporibus doloremque similique
+                tempore esse delectus dicta consequatur. Sunt dolores velit, est
+                voluptas labore sapiente quibusdam doloremque magni maiores!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn-without-background-color">See more</a>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> talifpathan13@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 7678089559</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a
+              href="./images/Resume_RD_Format_RP_Accepted_Only.pdf"
+              download
+              class="btn-without-background-color btn-with-background-color"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="submit" name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                id=""
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                cols="30"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button
+                type="submit"
+                class="btn-without-background-color btn-with-background-color"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright © <span id="copyrightYear"></span>. Developed by Talif Pathan.
+        All rights reserved.
+      </p>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("copyrightYear").innerHTML =
+          new Date().getFullYear();
+      });
+
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      const openTab = (tabTitle) => {
+        for (const tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (const tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabTitle).classList.add("active-tab");
+      };
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      const openMenu = () => {
+        sidemenu.style.right = "0rem";
+      };
+
+      const closeMenu = () => {
+        sidemenu.style.right = "-12.5rem";
+      };
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxKVowIsSD8WHFZESbf-oS3mKksqQ10SuXUJFC73qusoMyej-V2IK9-qfJKYr-vw8PIKg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
